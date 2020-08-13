@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?colorOnSurface">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lifecycle_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Activity Lifecycle in Android"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MyTheme.Headline1"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/activity_launched_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lifecycle_tv"
+       android:layout_centerHorizontal="true"
+        android:text="@string/activityLaunched"
+        android:layout_marginTop="15dp"
+        android:textColor="?colorOnSecondary"
+        android:padding="20dp"
+        style="@style/BluePill"
+        android:layout_marginBottom="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/oncreate_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_launched_btn"
+        android:layout_centerHorizontal="true"
+        android:text="OnCreate()"
+        android:textColor="?colorOnSecondary"
+        android:layout_marginBottom="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/onstart_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/oncreate_btn"
+        android:layout_centerHorizontal="true"
+        android:text="OnCreate()"
+        android:textColor="?colorOnSecondary"
+        android:layout_marginBottom="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/onrestart_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/oncreate_btn"
+        android:layout_toRightOf="@id/onstart_btn"
+        android:layout_centerHorizontal="true"
+        android:text="OnStart()"
+        android:layout_marginLeft="20dp"
+        android:textColor="?colorOnSecondary"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/onresume_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onstart_btn"
+        android:layout_centerHorizontal="true"
+        android:text="OnResume()"
+        android:textColor="?colorOnSecondary"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/activity_runing_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onresume_btn"
+        android:layout_centerHorizontal="true"
+        android:text="Activity Running"
+        android:layout_marginTop="20dp"
+        android:textColor="?colorOnSecondary"
+        android:padding="10dp"
+        style="@style/GreenPill"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/onpause_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_runing_btn"
+       android:layout_centerHorizontal="true"
+        android:text="onPause()"
+        android:layout_marginTop="30dp"
+        android:textColor="?colorOnSecondary"
+        android:layout_marginBottom="30dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/onstop_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onpause_btn"
+        android:layout_centerHorizontal="true"
+        android:text="OnStop()"
+        android:textColor="?colorOnSecondary"
+        android:layout_marginBottom="30dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ondestroy_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onstop_btn"
+        android:layout_centerHorizontal="true"
+        android:text="OnDestroy()"
+        android:textColor="?colorOnSecondary"
+        android:layout_marginBottom="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/appkilled_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onresume_btn"
+        android:layout_toLeftOf="@id/activity_runing_btn"
+        android:layout_centerHorizontal="true"
+        android:text="Activity Running"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp" t=""
+        android:textColor="?colorOnSecondary"
+        style="@style/OrangePill"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/activity_shutdown_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ondestroy_btn"
+        android:layout_centerHorizontal="true"
+        android:text="@string/activityShutDown"
+        android:layout_marginTop="10dp"
+        android:textColor="?colorOnSecondary"
+        android:padding="10dp"
+        style="@style/OrangePill"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>

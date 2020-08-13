@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MaterialProject</string>
+
+    <string name="activityLaunched">Activity\nlaunched</string>
+    <string name="activityRunning">Activity\nrunning</string>
+    <string name="activityShutDown">Activity\nshut down</string>
+    <string name="oncreate">onCreate()</string>
+    <string name="onstart">onStart()</string>
+    <string name="onresume">onResume()</string>
+    <string name="onrestart">onRestart()</string>
+    <string name="onpause">onPause()</string>
+    <string name="onstop">onStop()</string>
+    <string name="ondestroy">onDestroy()</string>
+    <string name="app_process_killed">App Process Killed</string>
+</resources>

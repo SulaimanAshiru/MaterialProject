@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/activity_launched_btn"
+        style="@style/BluePill"
+        android:text="@string/activityLaunched"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/oncreate_btn"
+        style="@style/Pill"
+        android:text="@string/oncreate"
+        android:layout_below="@id/activity_launched_btn"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/onstart_btn"
+        style="@style/Pill"
+        android:text="@string/onstart"
+        android:layout_below="@id/oncreate_btn"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/onresume_btn"
+        style="@style/Pill"
+        android:text="@string/onresume"
+        android:layout_below="@id/onstart_btn"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/onrestart_btn"
+        style="@style/Pill"
+        android:text="@string/onrestart"
+        android:layout_below="@id/oncreate_btn"
+        android:layout_toEndOf="@id/onstart_btn" />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/activity_runing_btn"
+        style="@style/GreenPill"
+        android:text="@string/activityRunning"
+        android:layout_below="@id/onresume_btn"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/appkilled_btn"
+        style="@style/OrangePill"
+        android:text="@string/app_process_killed"
+        android:layout_below="@id/onresume_btn"
+        android:layout_toStartOf="@id/activity_runing_btn"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/onpause_btn"
+        style="@style/Pill"
+        android:text="@string/onpause"
+        android:layout_below="@id/activity_runing_btn"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/onstop_btn"
+        style="@style/Pill"
+        android:text="@string/onstop"
+        android:layout_below="@id/onpause_btn"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ondestroy_btn"
+        style="@style/Pill"
+        android:text="@string/ondestroy"
+        android:layout_below="@id/onstop_btn"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/OrangePill"
+        android:layout_below="@id/ondestroy_btn"
+        android:text="@string/activityShutDown"/>
+
+
+</RelativeLayout>
